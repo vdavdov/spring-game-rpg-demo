@@ -26,6 +26,7 @@ public class PlayerController {
     @Autowired
     private PlayerService playerService;
 
+
     @GetMapping()
     public List<PlayerInfo> getAll(@RequestParam(required = false) String name,
                                    @RequestParam(required = false) String title,
